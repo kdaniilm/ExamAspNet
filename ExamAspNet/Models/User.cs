@@ -8,6 +8,6 @@ namespace ExamAspNet.Models
 {
     public class User : IdentityUser<Guid>
     {
-
+        public bool IsAdminConfirm { get; set; }
     }
 }

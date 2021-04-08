@@ -1,0 +1,32 @@
+﻿@model ExamAspNet.Models.LoginViewModel
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <fieldset>
+        <h2 class="fs-title">Login</h2>
+        @*<form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+
+
+            <input asp-for="Email" placeholder="Login" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+
+            <input asp-for="Password" class="form-control" placeholder="Password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+
+            <input style=" margin-left: -60px;" class="form-check-input" asp-for="RememberMe" /> @Html.DisplayNameFor(model => model.RememberMe)
+
+            <input style="color:white" type="submit" value="LogIn" class="btn btn-primary" />
+
+        @*</form>*@
+
+    </fieldset>
+}
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

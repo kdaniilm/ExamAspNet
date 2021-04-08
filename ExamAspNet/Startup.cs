@@ -1,12 +1,17 @@
+using ExamAspNet.Models;
+using ExamAspNet.Models.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ExamAspNet.Infrastructure.Providers;
+using AutoMapper;
+using ExamAspNet.Infrastructure;
+using ExamAspNet.Infrastructure.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ExamAspNet
 {
@@ -23,6 +28,27 @@ namespace ExamAspNet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<ExamContext>(x => x.UseSqlServer(Configuration.GetConnectionString("defCon")));
+            services.AddIdentity<User, Role>()
+                .AddEntityFrameworkStores<ExamContext>().AddDefaultTokenProviders().AddTokenProvider<EmailConfirmationTokenProvider<User>>("emailconfirmation");
+
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MapperConfig());
+            });
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
+            var option = new SendGridOptions();
+            Configuration.GetSection("SendGridOptions").Bind(option);
+            services.AddTransient<SendGridOptions>(x => option);
+            //services.AddTransient(typeof(SendGridOptions));
+
+            services.AddTransient<IEmailSender, EmailSender>();
+            services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromHours(2));
+
+            services.AddAuthentication().AddCookie(op => op.LoginPath = "/Login");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

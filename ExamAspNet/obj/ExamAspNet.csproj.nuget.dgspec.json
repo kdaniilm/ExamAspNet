@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Vs projects\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj": {}
   },
   "projects": {
-    "D:\\Vs projects\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Vs projects\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj",
         "projectName": "ExamAspNet",
-        "projectPath": "D:\\Vs projects\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\ExamAspNet\\ExamAspNet\\ExamAspNet.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Vs projects\\ExamAspNet\\ExamAspNet\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\ExamAspNet\\ExamAspNet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,6 +46,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -57,6 +61,14 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.22.0, )"
             }
           },
           "imports": [
