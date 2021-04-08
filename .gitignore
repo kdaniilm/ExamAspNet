@@ -1,1 +1,9 @@
-ExamAspNet/appsettings.Development.jsonExamAspNet/wwwroot/lib/jquery-validation/dist/jquery.validate.js
+ExamAspNet/appsettings.Development.jsonExamAspNet/wwwroot/lib/jquery-validation/dist/jquery.validate.jsExamAspNet/appsettings.Development.json
+ExamAspNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+ExamAspNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js
+ExamAspNet/wwwroot/lib/jquery-validation/dist/additional-methods.js
+ExamAspNet/wwwroot/lib/jquery-validation/dist/additional-methods.min.js
+ExamAspNet/wwwroot/lib/jquery-validation/dist/jquery.validate.js
+ExamAspNet/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js
+ExamAspNet/wwwroot/lib/jquery/dist/jquery.js
+ExamAspNet/wwwroot/lib/jquery/dist/jquery.min.js
