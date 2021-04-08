@@ -389,3 +389,6 @@ C:\Users\User\Documents\GitHub\ExamAspNet\ExamAspNet\obj\Debug\net5.0\ExamAspNet
 C:\Users\User\Documents\GitHub\ExamAspNet\ExamAspNet\obj\Debug\net5.0\ExamAspNet.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\ExamAspNet\ExamAspNet\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\User\Documents\GitHub\ExamAspNet\ExamAspNet\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\User\Documents\GitHub\ExamAspNet\ExamAspNet\obj\Debug\net5.0\Razor\Views\Admin\MatchControl.cshtml.g.cs
+C:\Users\User\Documents\GitHub\ExamAspNet\ExamAspNet\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\User\Documents\GitHub\ExamAspNet\ExamAspNet\obj\Debug\net5.0\Razor\Views\Home\GetMatchPartial.cshtml.g.cs

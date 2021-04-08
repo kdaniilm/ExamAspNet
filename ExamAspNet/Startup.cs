@@ -73,6 +73,9 @@ namespace ExamAspNet
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "admin",
+                    pattern: "admin/{controller=Admin}/{action=Index}/{id?}");
             });
         }
     }

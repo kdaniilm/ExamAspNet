@@ -1,6 +1,24 @@
-﻿@model List<ExamAspNet.Models.MatchViewModel>
+﻿@model List<ExamAspNet.Models.Match>
 
 @foreach(var match in Model)
 {
-
+<div class="col">
+    <h2>@match.StartTime</h2>
+    <div class="row">
+       <h3>@match.FirstPayerName</h3>
+       <p>Round 1:@match.FirstPlayerFirstRound ;  </p>
+       <p>Round 2:@match.FirstPlayerSecondRound ;  </p>
+       <p>Round 3:@match.FirstPlayerThirtRound ;  </p>
+       <p>Round 4:@match.FirstPlayerFourthRound ;  </p>
+       <p>Round 5:@match.FirstPlayerFivethRound ;  </p>
+    </div>
+    <div class="row">
+       <h3>@match.SecondPayerName</h3>
+        <p>Round 1:@match.SecondPlayerFirstRound ;  </p>
+        <p>Round 2:@match.SecondPlayerSecondRound ;  </p>
+        <p>Round 3:@match.SecondPlayerThirtRound ;  </p>
+        <p>Round 4:@match.SecondPlayerFourthRound ;  </p>
+        <p>Round 5:@match.SecondPlayerFivethRound ;  </p>
+    </div>
+</div>
 }

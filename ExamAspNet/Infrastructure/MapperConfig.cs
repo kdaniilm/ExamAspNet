@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ExamAspNet.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,11 @@ namespace ExamAspNet.Infrastructure
     {
         public MapperConfig()
         {
+            CreateMap<Match, MatchViewModel>();
+            CreateMap<MatchViewModel, Match>();
+
+            CreateMap<User, UserViewModel>();
+            CreateMap<UserViewModel, User>();
         }
     }
 }

@@ -52,7 +52,7 @@ namespace ExamAspNet.Controllers
                 new { guid = token, userEmail = user.Email }, Request.Scheme, Request.Host.Value);
             await _emailSender.SendEmailAsync(user.Email, "Confirm your email ->>>", link);
 
-            return Redirect("/home/index");
+            return Redirect("Home/index");
 
         }
 

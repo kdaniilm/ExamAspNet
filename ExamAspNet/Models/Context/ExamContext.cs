@@ -18,5 +18,6 @@ namespace ExamAspNet.Models.Context
         {
             base.OnModelCreating(builder);
         }
+
     }
 }

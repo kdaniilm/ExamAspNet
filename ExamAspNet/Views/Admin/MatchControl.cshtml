@@ -1,0 +1,76 @@
+﻿@model MatchViewModel
+
+<div class="col-md-3"></div>
+<div class="col-md-6">
+    @using (Html.BeginForm("MatchControl", "Admin", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label asp-for="@Model.FirstPayerName"></label>
+            <input asp-for="@Model.FirstPayerName" class="form-control" />
+            <span asp-validation-for="@Model.FirstPayerName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.SecondPayerName"></label>
+            <input asp-for="@Model.SecondPayerName" class="form-control" />
+            <span asp-validation-for="@Model.SecondPayerName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.StartTime"></label>
+            <input asp-for="@Model.StartTime" class="form-control" />
+            <span asp-validation-for="@Model.StartTime" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.FirstPlayerFirstRound"></label>
+            <input asp-for="@Model.FirstPlayerFirstRound" class="form-control" />
+            <span asp-validation-for="@Model.FirstPlayerFirstRound" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.FirstPlayerSecondRound"></label>
+            <input asp-for="@Model.FirstPlayerSecondRound" class="form-control" />
+            <span asp-validation-for="@Model.FirstPlayerSecondRound" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.FirstPlayerThirtRound"></label>
+            <input asp-for="@Model.FirstPlayerThirtRound" class="form-control" />
+            <span asp-validation-for="@Model.FirstPlayerThirtRound" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.FirstPlayerFourthRound"></label>
+            <input asp-for="@Model.FirstPlayerFourthRound" class="form-control" />
+            <span asp-validation-for="@Model.FirstPlayerFourthRound" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.FirstPlayerFivethRound"></label>
+            <input asp-for="@Model.FirstPlayerFivethRound" class="form-control" />
+            <span asp-validation-for="@Model.FirstPlayerFivethRound" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.SecondPlayerFirstRound"></label>
+            <input asp-for="@Model.SecondPlayerFirstRound" class="form-control" />
+            <span asp-validation-for="@Model.SecondPlayerFirstRound" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.SecondPlayerSecondRound"></label>
+            <input asp-for="@Model.SecondPlayerSecondRound" class="form-control" />
+            <span asp-validation-for="@Model.SecondPlayerSecondRound" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="@Model.SecondPlayerThirtRound"></label>
+                <input asp-for="@Model.SecondPlayerThirtRound" class="form-control" />
+                <span asp-validation-for="@Model.SecondPlayerThirtRound" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.SecondPlayerFourthRound"></label>
+                <input asp-for="@Model.SecondPlayerFourthRound" class="form-control" />
+                <span asp-validation-for="@Model.SecondPlayerFourthRound" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.SecondPlayerFivethRound"></label>
+                <input asp-for="@Model.SecondPlayerFivethRound" class="form-control" />
+                <span asp-validation-for="@Model.SecondPlayerFivethRound" class="text-danger"></span>
+            </div>
+            <input type="submit" value="Add" />
+        </div>
+    }
+</div>
+<div class="col-md-3"></div>
